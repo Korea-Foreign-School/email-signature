@@ -7,120 +7,75 @@
 </head>
 
 <body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, sans-serif;">
-    <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; border-collapse: collapse;">
+    <table cellpadding="0" cellspacing="0" border="0"
+        style="max-width:600px;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
         <tr>
-            <td style="padding: 10px  ; vertical-align: top;">
-                <div style="display: block; ">
-                    <img height="80"
-                        src="https://raw.githubusercontent.com/Korea-Foreign-School/email-signature/main/logo.png" />
-                    <div style="display: flex; justify-content: center; gap: 4px; margin-top: 6px;"> <a
-                            href="https://www.instagram.com/koreaforeign/?hl=en"
-                            style="border-radius: 100%; background-color: #003674; height: 16px; width: 16px; display: flex; justify-content: center; align-items: center;">
-                            <img src="https://korea-foreign-school.github.io/email-signature/icons/instagram.svg"
-                                width="12" height="12" />
-
-                        </a>
-                        <a href="https://www.facebook.com/koreaforeign/"
-                            style="border-radius: 100%; background-color: #003674; height: 16px; width: 16px; display: flex; justify-content: center; align-items: center;">
-
-                            <img src="https://korea-foreign-school.github.io/email-signature/icons/facebook.svg"
-                                width="12" height="12" />
-
-                        </a>
-                        <a href="https://koreaforeign.org/"
-                            style="border-radius: 100%; background-color: #003674; height: 16px; width: 16px; display: flex; justify-content: center; align-items: center;">
-
-
-                            <img src="https://korea-foreign-school.github.io/email-signature/icons/website.svg"
-                                width="12" height="12" />
-
-                        </a>
-
-                    </div>
-                </div>
-
+            <td style="padding:10px;vertical-align:top;text-align:center;"><img height="80"
+                    src="https://raw.githubusercontent.com/Korea-Foreign-School/email-signature/main/logo.png" />
+                <table cellpadding="0" cellspacing="0" border="0" style="margin:6px auto 0 auto;text-align:center;">
+                    <tr>
+                        <td style="padding-right:4px;"><a href="https://www.instagram.com/koreaforeign/?hl=en"
+                                style="display:inline-block;background-color:#003674;border-radius:50%;height:16px;width:16px;text-align:center;"><img
+                                    src="https://korea-foreign-school.github.io/email-signature/icons/instagram.svg"
+                                    width="12" height="12" /></a></td>
+                        <td style="padding-right:4px;"><a href="https://www.facebook.com/koreaforeign/"
+                                style="display:inline-block;background-color:#003674;border-radius:50%;height:16px;width:16px;text-align:center;"><img
+                                    src="https://korea-foreign-school.github.io/email-signature/icons/facebook.svg"
+                                    width="12" height="12" /></a></td>
+                        <td><a href="https://koreaforeign.org/"
+                                style="display:inline-block;background-color:#003674;border-radius:50%;height:16px;width:16px;text-align:center;"><img
+                                    src="https://korea-foreign-school.github.io/email-signature/icons/website.svg"
+                                    width="12" height="12" /></a></td>
+                    </tr>
+                </table>
             </td>
-
-
-            <!-- Contact Information -->
-            <td style="padding: 10px">
+            <td style="padding:10px;vertical-align:top;">
                 <table cellpadding="0" cellspacing="0" border="0">
-                    <!-- Name and Title -->
                     <tr>
-                        <td>
-                            <div style="display: flex; align-items: center; gap: 8px">
-                                <span style="font-size: 16px; font-weight: 600; color: #333; ">Aiaru
-                                    Mukhamed
-                                </span>
-                                <span style="font-size: 12px; color: #666;">
-                                    Coding Teacher
-                                </span>
-                            </div>
-
-                            <div style="width: 100%; height: 1px; background-color: #003674; margin: 4px 0 ;">
-                            </div>
+                        <td><span style="font-size:16px;font-weight:600;color:#333;">{{user.fullName}}</span><br><span
+                                style="font-size:12px;color:#666;">{{user.title}}</span>
+                            <div style="width:100%;height:1px;background-color:#003674;margin:6px 0;"></div>
                         </td>
                     </tr>
-
-                    <!-- Email -->
                     <tr>
-                        <td style="padding: 2px 0;">
+                        <td style="padding:2px 0;">
                             <table cellpadding="0" cellspacing="0" border="0">
-                                <tr style="display: flex; align-items: center;">
-                                    <td style="width: 30px; display: flex; align-items: center;">
-                                        <img src="https://korea-foreign-school.github.io/email-signature/icons/mail.svg"
-                                            width="12" height="12" />
-
-
-                                    </td>
-                                    <td style="display: flex; align-items: center;">
-                                        <a id="email" href="mailto:aiaru@koreaforeign.org"
-                                            style="color: #666; text-decoration: none; font-size: 10px;">aiaru@koreaforeign.org</a>
+                                <tr style="height:18px;">
+                                    <td valign="middle" style="width:16px;vertical-align:middle;"><img
+                                            src="https://korea-foreign-school.github.io/email-signature/icons/mail.svg"
+                                            width="12" height="12" style="display:block;" /></td>
+                                    <td valign="middle" style="vertical-align:middle;line-height:12px;"><a
+                                            href="mailto:{{user.emailAddress}}"
+                                            style="color:#666;text-decoration:none;font-size:10px;line-height:12px;">{{user.emailAddress}}</a>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 2px 0;">
+                        <td style="padding:2px 0;">
                             <table cellpadding="0" cellspacing="0" border="0">
-                                <tr style="display: flex; align-items: center;">
-                                    <td style="width: 30px; display: flex; align-items: center;">
-                                        <img src="https://korea-foreign-school.github.io/email-signature/icons/phone.svg"
-                                            width="12" height="12" />
-
-                                    </td>
-                                    <td style="display: flex; align-items: center;">
-                                        <a href="tel:02%20571%202917" target="_blank"
-                                            style="color: #666; text-decoration: none; font-size: 10px;">02 571 2917</a>
-                                        <span
-                                            style="color: #666; text-decoration: none; font-size: 10px; margin: 0 4px;">
-                                            | </span>
-                                        <a href="tel:02%20571%202918" target="_blank"
-                                            style="color: #666; text-decoration: none; font-size: 10px;">02 571 2918</a>
-
-
-                                    </td>
+                                <tr style="height:18px;">
+                                    <td valign="middle" style="width:16px;vertical-align:middle;"><img
+                                            src="https://korea-foreign-school.github.io/email-signature/icons/phone.svg"
+                                            width="12" height="12" style="display:block;" /></td>
+                                    <td valign="middle" style="vertical-align:middle;line-height:12px;"><span
+                                            style="font-size:10px;color:#666;line-height:12px;">02 571 2917&nbsp; |
+                                            &nbsp;02 571 2918</span></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-
-                    <!-- Address -->
                     <tr>
-                        <td style="padding: 2px 0;">
+                        <td style="padding:2px 0;">
                             <table cellpadding="0" cellspacing="0" border="0">
-                                <tr style="display: flex; align-items: center;">
-                                    <td style="width: 30px; display: flex; align-items: center;">
-                                        <img src="https://korea-foreign-school.github.io/email-signature/icons/location.svg"
-                                            width="12" height="12" />
-
-                                    </td>
-                                    <td style="display: flex; align-items: center;">
-                                        <span id="address"
-                                            style="color: #666; text-decoration: none; font-size: 10px;">509 Yeoksam-ro,
-                                            Gangnam-gu, Seoul</span>
-                                    </td>
+                                <tr style="height:18px;">
+                                    <td valign="middle" style="width:16px;vertical-align:middle;"><img
+                                            src="https://korea-foreign-school.github.io/email-signature/icons/location.svg"
+                                            width="12" height="12" style="display:block;" /></td>
+                                    <td valign="middle" style="vertical-align:middle;line-height:12px;"><span
+                                            style="font-size:10px;color:#666;line-height:12px;">509 Yeoksam-ro,
+                                            Gangnam-gu, Seoul</span></td>
                                 </tr>
                             </table>
                         </td>
@@ -129,6 +84,7 @@
             </td>
         </tr>
     </table>
+
 </body>
 
 </html>
