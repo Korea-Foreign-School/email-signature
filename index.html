@@ -6,80 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif, sans-serif;">
+<body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;">
     <table cellpadding="0" cellspacing="0" border="0"
         style="max-width:600px;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
         <tr>
-            <td style="padding:10px;vertical-align:top;text-align:center;"><img height="80"
-                    src="https://raw.githubusercontent.com/Korea-Foreign-School/sign/main/logo.png" />
+            <td style="padding:10px;vertical-align:top;text-align:center;">
+
+                <img height="80" src="https://raw.githubusercontent.com/Korea-Foreign-School/sign/main/logo.png" />
+
                 <table cellpadding="0" cellspacing="0" border="0" style="margin:6px auto 0 auto;text-align:center;">
                     <tr>
-                        <td style="padding-right:4px;"><a href="https://www.instagram.com/koreaforeign/?hl=en"
-                                style="display:inline-block;background-color:#003674;border-radius:50%;height:16px;width:16px;text-align:center;"><img
-                                    src="https://korea-foreign-school.github.io/sign/images/instagram.png" width="12"
-                                    height="12" /></a></td>
-                        <td style="padding-right:4px;"><a href="https://www.facebook.com/koreaforeign/"
-                                style="display:inline-block;background-color:#003674;border-radius:50%;height:16px;width:16px;text-align:center;"><img
-                                    src="https://korea-foreign-school.github.io/sign/images/facebook.png" width="12"
-                                    height="12" /></a></td>
-                        <td><a href="https://koreaforeign.org/"
-                                style="display:inline-block;background-color:#003674;border-radius:50%;height:16px;width:16px;text-align:center;"><img
-                                    src="https://korea-foreign-school.github.io/sign/images/website.png" width="12"
-                                    height="12" /></a></td>
+
+                        <!-- Instagram -->
+                        <td style="padding-right:4px;">
+                            <a href="https://www.instagram.com/koreaforeign/?hl=en" style="display:inline-block;
+          width:16px;
+          height:16px;
+          background:#003674;
+          border-radius:50%;
+          text-align:center;">
+                                <img src="https://korea-foreign-school.github.io/sign/images/instagram.png" width="12"
+                                    height="12" style="display:block;
+                margin:2px auto 0 auto;">
+                            </a>
+
+                        </td>
+
+                        <!-- Facebook -->
+                        <td style="padding-right:4px;">
+                            <a href="https://www.facebook.com/koreaforeign/" style="display:inline-block;
+          width:16px;
+          height:16px;
+          background:#003674;
+          border-radius:50%;
+          text-align:center;">
+                                <img src="https://korea-foreign-school.github.io/sign/images/facebook.png" width="12"
+                                    height="12" style="display:block;
+                margin:2px auto 0 auto;">
+                            </a>
+                        </td>
+
+                        <!-- Website -->
+                        <td>
+                            <a href="https://koreaforeign.org/" style="display:inline-block;
+          width:16px;
+          height:16px;
+          background:#003674;
+          border-radius:50%;
+          text-align:center;">
+                                <img src="https://korea-foreign-school.github.io/sign/images/website.png" width="12"
+                                    height="12" style="display:block;
+                margin:2px auto 0 auto;">
+                            </a>
+                        </td>
+
                     </tr>
                 </table>
+
             </td>
+
             <td style="padding:10px;vertical-align:top;">
                 <table cellpadding="0" cellspacing="0" border="0">
                     <tr>
-                        <td><span style="font-size:16px;font-weight:600;color:#333;">{{user.fullName}}</span><br><span
-                                style="font-size:12px;color:#003674;">{{user.title}}</span>
+                        <td>
+                            <span style="font-size:16px;font-weight:600;color:#333;">{{user.fullName}}</span><br>
+                            <span style="font-size:12px;color:#003674;">{{user.title}}</span>
                             <div style="width:100%;height:1px;background-color:#003674;margin:6px 0;"></div>
                         </td>
                     </tr>
+
+                    <!-- Email -->
                     <tr>
                         <td style="padding:2px 0;">
                             <table cellpadding="0" cellspacing="0" border="0">
                                 <tr style="height:18px;">
-                                    <td valign="middle" style="width:16px;vertical-align:middle;"><img
-                                            src="https://korea-foreign-school.github.io/sign/images/mail.png" width="12"
-                                            height="12" style="display:block;" /></td>
-                                    <td valign="middle" style="vertical-align:middle;line-height:12px;"><a
-                                            href="mailto:{{user.emailAddress}}"
-                                            style="color:#666;text-decoration:none;font-size:10px;line-height:12px;">{{user.emailAddress}}</a>
+                                    <td valign="middle" style="width:16px;">
+                                        <img src="https://korea-foreign-school.github.io/sign/images/mail.png"
+                                            width="12" height="12" style="display:block;">
+                                    </td>
+                                    <td valign="middle" style="line-height:12px;">
+                                        <a href="mailto:{{user.emailAddress}}"
+                                            style="color:#666;text-decoration:none;font-size:10px;line-height:12px;">
+                                            {{user.emailAddress}}
+                                        </a>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
+
+                    <!-- Phone -->
                     <tr>
                         <td style="padding:2px 0;">
                             <table cellpadding="0" cellspacing="0" border="0">
                                 <tr style="height:18px;">
-                                    <td valign="middle" style="width:16px;vertical-align:middle;"><img
-                                            src="https://korea-foreign-school.github.io/sign/images/phone.png"
-                                            width="12" height="12" style="display:block;" /></td>
-                                    <td valign="middle" style="vertical-align:middle;line-height:12px;"><span
-                                            style="font-size:10px;color:#666;line-height:12px;">02 571 2917&nbsp; |
-                                            &nbsp;02 571 2918</span></td>
+                                    <td valign="middle" style="width:16px;">
+                                        <img src="https://korea-foreign-school.github.io/sign/images/phone.png"
+                                            width="12" height="12" style="display:block;">
+                                    </td>
+                                    <td valign="middle" style="line-height:12px;">
+                                        <span style="font-size:10px;color:#666;line-height:12px;">
+                                            02 571 2917&nbsp; | &nbsp;02 571 2918
+                                        </span>
+                                    </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
+
+                    <!-- Address -->
                     <tr>
                         <td style="padding:2px 0;">
                             <table cellpadding="0" cellspacing="0" border="0">
                                 <tr style="height:18px;">
-                                    <td valign="middle" style="width:16px;vertical-align:middle;"><img
-                                            src="https://korea-foreign-school.github.io/sign/images/location.png"
-                                            width="12" height="12" style="display:block;" /></td>
-                                    <td valign="middle" style="vertical-align:middle;line-height:12px;"><span
-                                            style="font-size:10px;color:#666;line-height:12px;">509 Yeoksam-ro,
-                                            Gangnam-gu, Seoul</span></td>
+                                    <td valign="middle" style="width:16px;">
+                                        <img src="https://korea-foreign-school.github.io/sign/images/location.png"
+                                            width="12" height="12" style="display:block;">
+                                    </td>
+                                    <td valign="middle" style="line-height:12px;">
+                                        <span style="font-size:10px;color:#666;line-height:12px;">
+                                            509 Yeoksam-ro, Gangnam-gu, Seoul
+                                        </span>
+                                    </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
+
                 </table>
             </td>
         </tr>
